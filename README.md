@@ -22,11 +22,11 @@ Upload local repository to Github
 
 # 3.Synchronize local repository to Github.
 1) $ git remote -v         #查看远端信息.
-2) $ git remote add <name> <url>       #添加远端信息.
-3) $ git fetch <name> master           #拉取远端版本仓库，不会跟本地的master进行merge.
+2) $ git remote add repository_name git_url       #添加远端信息.
+3) $ git fetch repository_name master           #拉取远端版本仓库，不会跟本地的master进行merge.
 4) $ git branch -v         #查看本地分支.
 5) $ git branch -va        #查看所有分支（本地和远端）.
 6) $ git merge -h          #查看merge帮助信息.
-7) $ git merge --allow-unrelated-histories <name>/master       #允许合并不相干的版本，一般采用“recursive”策略.
-8) $ git push <name> master      #同步本地仓库到Github.
+7) $ git merge --allow-unrelated-histories repository_name/master       #允许合并不相干的版本，一般采用“recursive”策略.
+8) $ git push repository_name master      #同步本地仓库到Github.
   
